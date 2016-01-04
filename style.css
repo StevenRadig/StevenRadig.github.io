@@ -1,0 +1,474 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,300,100);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400,300);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+ 	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.slide {
+	position: relative;
+	height: 85%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	box-sizing: border-box;
+	padding: 50px;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.slide h1 {
+	font-weight: 300;
+}
+
+aside {
+	height: 100%;
+	width: 30%;
+	box-sizing: border-box;
+	padding: 50px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-right: 1px solid #2c3e50;
+	background-color: #fafafa;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: #2c3e50;
+	overflow: hidden;
+}
+
+#contact {
+	width: 100%;
+	height: 200px;
+	margin-right: -102px;
+	position: relative;
+	z-index: -10;
+	box-sizing: border-box;
+	padding: 40px 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	border: 1px solid #2c3e50;
+	line-height: 1.15em;
+}
+#contact h1 { 
+	width: 180px;
+	font-weight: 400;
+	text-align: center;
+}
+#contact h2, h3 {
+	width: 180px;
+	font-weight: 300;
+	text-align: center;
+}
+
+#contact h4 {
+	width: 140px;
+	text-align: center;
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-size: .9em;
+	margin-top: 5px;
+	background-color: #2c3e50;
+	color: #fafafa;
+	border-radius: .9em;
+	padding: 2px 0;
+	margin-right: 20px;
+
+}
+
+#profile_pic {
+	height: 200px;
+	width: 200px;
+	border: 1px solid #2c3e50;
+	border-radius: 100%;
+	position: relative;
+	background-image: URL('images/yung.jpg');
+	background-size: 250px 250px;
+	background-position: -30px -10px;
+	background-color: #2c3e50;
+	background-blend-mode: luminosity;
+}
+#profile_pic:before {
+	display: block;
+	content: '';
+	height: 200px;
+	width: 600px;
+	position: relative;
+	z-index: -3;
+	right: 500px;
+	transform: rotate(-55deg);
+	transform-origin: center right;
+	box-sizing: border-box;
+	border: 1px solid #2c3e50;
+	background-color: #fafafa;
+}
+
+#content {
+	width: 70%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide-header {
+	height: 80px;
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #2c3e50;
+	transition: background .24s ease-in-out;
+	color: #2c3e50;
+}
+/*.slide-header:hover {
+	background: #2c3e50;
+	color: #ecf0f1;
+}*/
+
+#slide_1 {
+	background-color: ;
+	color: #2c3e50;;
+}
+.columns {
+	display: block;
+	-webkit-columns: 100px 2;
+	height: 400px;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	overflow: auto;
+}
+
+.columns::-webkit-scrollbar {
+	height: 8px;
+}
+.columns::-webkit-scrollbar-track {
+	border: 1px solid #2c3e50;
+	border-radius: 8px;
+}
+.columns::-webkit-scrollbar-thumb {
+	background: #2c3e50;
+	border-radius: 8px;
+}
+
+#slide_2 {
+	box-sizing: content-box;
+	padding: 0;
+}
+.flex {
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+	align-items: center;
+}
+#slide_2 h1 {
+	width: 100%;
+	height: 5rem;
+	background-color: #2c3e50;
+	color: #ecf0f1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+}
+#technologies {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	min-width: 675px;
+	width: 100%;
+	height: 300px;
+	background-color: #34495e;
+}
+.skill {
+	position: relative;
+	display: flex;
+	flex: 1;
+	min-height: 150px;
+	min-width: 30%;
+	list-style-type: none;
+	box-sizing: border-box;
+	border: 1px solid #34495e;
+}
+.skill:first-child {
+	border-right: none;
+	border-bottom: none;
+}
+.skill:nth-child(2) {border-bottom: none;}
+.skill:nth-child(3) {
+	border-left: none;
+	border-bottom: none;
+}
+.skill:nth-child(4) {border-right: none;}
+.skill:nth-child(6) {border-left: none;}
+
+.skill .front {
+	position: absolute;
+	transform: perspective(600px) rotateY(0deg);
+	background: #2c3e50;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fafafa;
+}
+.skill .back {
+	position: absolute;
+	transform: perspective(600px) rotateY(180deg);
+	background: #fafafa;
+	color: #2c3e50;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Open Sans';
+	font-weight: 700;
+}
+.skill .back canvas {margin: 5px;}
+
+.skill:hover .front {
+	transform: perspective(600px) rotateY(-180deg);
+}
+.skill:hover .back {
+	transform: perspective(600px) rotateY(0deg);
+}
+#work_x {padding: 0;}
+#work_x h1 {
+	width: 100%;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	color: #2c3e50;
+}
+
+.work_list {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+.work_list li {
+	list-style-type: none;
+	position: relative; 
+ 	margin: 5px 0 5px 120px;
+ 	width: 300px;
+ 	padding-bottom: 10px;
+ 	border-bottom: 1px solid #ccc;
+ }
+.work_list li:before {
+	content: '';
+	display: block;
+	height: 70px;
+	width: 75px;
+	position: absolute;
+	left: -90px;
+	background-size: cover;
+	box-shadow: 0 0 1px rgba(0,0,0,.2);
+	background-color: #2c3e50;
+	background-blend-mode: luminosity;
+}
+
+
+#work_list1 li:nth-child(1):before {
+	background-image: url('https://lh4.googleusercontent.com/-4g95Bo-AgTM/AAAAAAAAAAI/AAAAAAAAAAA/ZDl5Ogv0ulA/s0-c-k-no-ns/photo.jpg');
+}
+#work_list1 li:nth-child(2):before {
+	background-image: url('https://pbs.twimg.com/profile_images/378800000704043508/cad54e71a86afa9dddaebe039d1b3c55_400x400.png');
+}
+#work_list1 li:nth-child(3):before {
+	background-image: url('http://sfappeal.com/wp-content/uploads/2011/06/target-logo.png');
+}
+#work_list1 li:nth-child(4):before {
+	background-image: url('https://media.glassdoor.com/sqll/134515/family-heritage-life-insurance-squarelogo.png');
+}
+#work_list1 li:nth-child(5):before {
+	background-image: url('https://yt3.ggpht.com/-f_rc1ho1nDQ/AAAAAAAAAAI/AAAAAAAAAAA/FACiH5FmNWs/s900-c-k-no/photo.jpg');
+}
+
+
+#work_list2 li:nth-child(1):before {
+	background-image: url('https://pbs.twimg.com/profile_images/542067686167957504/sTd6FOwC.png');
+}
+#work_list2 li:nth-child(2):before {
+	background-image: url('https://fbcdn-photos-h-a.akamaihd.net/hphotos-ak-prn2/v/t1.0-0/p160x160/563617_556060377767450_1956485971_n.png?oh=15f3000b22cea783b0a75b84f87821ed&oe=56BFE678&__gda__=1455523971_37530ae51653cb4a34ff0bf1a338ecd2');
+}
+#work_list2 li:nth-child(3):before {
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/TheHomeDepot.svg/150px-TheHomeDepot.svg.png');
+}
+#work_list2 li:nth-child(4):before {
+	background-image: url('https://www.pearson.com/content/dam/corporate/global/pearson-dot-com/Pearson_logo.png');
+}
+#work_list2 li:nth-child(5):before {
+	background-image: url('http://static.wixstatic.com/media/61951c_d60a22797c3a46e0b5d09c4fd717945e.jpg_srz_181_257_85_22_0.50_1.20_0.00_jpg_srz');
+}
+
+.no-bottom-border {border-bottom: 0 !important;}
+#ed {
+	padding: 0;
+}
+#ed h1 {
+	width: 100%;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	color: #2c3e50;
+}
+#ed_flex {
+	display: flex;
+	flex: 1;
+	width: 100%;
+}
+#ed_left {
+	display: flex;
+	flex: 5;
+	flex-direction: column;
+}
+.school {
+	display: flex;
+	flex: 1;
+	background-blend-mode: luminosity;
+	background-color: #2c3e50;
+	background-size: cover;
+	color: #ecf0f1;
+}
+.school p {
+	width: 200px;
+	min-height: 100%;
+	background: rgba(26, 188, 156, .6);
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.school:nth-child(1) {
+	background-image: url('http://www.showchoir.com/choirs/media/school_images/s68.jpg');
+	justify-content: flex-start;
+	background-position: 0 -100px;
+}
+
+.school:nth-child(2) {
+	background-image: url('http://www.wellingtonmgt.com/sites/default/files/property_images/Bandana%20Sq_1st%20Light%231_PRINT_0.jpg');
+	justify-content: flex-end;
+}
+.school:nth-child(3) {
+	background-image: url('http://www.opnarchitects.com/wp-content/uploads/2012/12/Kirkwood-Cedar-Hall-2-of-7.jpg');
+	justify-content: flex-start;
+	box-sizing: border-box;
+	padding-left: 20%;
+	background-position: 0 300px;
+}
+#ed_right {
+	display: flex;
+	flex-direction: column;
+	flex: 3;
+	background: #fafafa;
+}
+
+#more {
+	padding: 0;
+
+}
+#more h1 {
+	width: 100%;
+	height: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	color: #2c3e50;
+}
+#more_flex {
+	display: flex;
+	flex: 1;
+	width: 100%;
+}
+.more_list {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.more_list h2 {
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+	font-variant: small-caps;
+	color: #2c3e50;
+	border: 1px solid #2c3e50;
+	border-left: none;
+}
+#interests {
+	display: flex;
+	flex-direction: column;
+}
+
+#more details {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+#more summary {
+	min-width: 100%;
+	color: #2c3e50;
+	font-size: 1.5em;
+	font-weight: 300;
+	position: relative;
+	top: 20px;
+	display: block;
+	margin-bottom: 1.3rem;
+}
+#more summary::-webkit-details-marker {
+    color: rgba(26, 188, 56, .6);
+}
+#more summary:focus {
+	outline: 0;
+}
+#more details p {
+	color: #555;
+}
+#awards {
+	border-left: 1px solid #2c3e50;
+}
+#awards h3 {
+	width: 100%;
+	text-align: left;
+	font-weight: bold;
+}
+#awards_content {
+	box-sizing: border-box;
+	padding: 10px;
+	color: #2c3e50;
+}
+#awards_content p {
+	margin-bottom: 8px;
+}

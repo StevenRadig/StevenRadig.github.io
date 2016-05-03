@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,300,100);
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400,300);
+/*@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,300,100);
+*/@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400,300);
 
 * {
 	margin: 0;
@@ -19,6 +19,7 @@ body {
 
 .slide {
 	position: relative;
+	width: 100%;
 	height: 85%;
 	display: flex;
 	flex-direction: column;
@@ -36,6 +37,7 @@ body {
 aside {
 	height: 100%;
 	width: 30%;
+	min-width: 385px;
 	box-sizing: border-box;
 	padding: 50px;
 	position: fixed;
@@ -65,17 +67,17 @@ aside {
 	align-items: flex-end;
 	justify-content: center;
 	border: 1px solid #2c3e50;
-	line-height: 1.15em;
+	line-height: 1.25em;
 }
 #contact h1 { 
 	width: 180px;
-	font-weight: 400;
 	text-align: center;
 }
 #contact h2, h3 {
 	width: 180px;
 	font-weight: 300;
 	text-align: center;
+	font-variant: small-caps;
 }
 
 #contact h4 {
@@ -99,7 +101,7 @@ aside {
 	border: 1px solid #2c3e50;
 	border-radius: 100%;
 	position: relative;
-	background-image: URL('images/yung.jpg');
+	background-image: URL('../images/yung.jpg');
 	background-size: 250px 250px;
 	background-position: -30px -10px;
 	background-color: #2c3e50;
@@ -119,12 +121,40 @@ aside {
 	border: 1px solid #2c3e50;
 	background-color: #fafafa;
 }
+#links {
+	height: 45%;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	box-sizing: border-box;
+	padding: 1.5em 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Open Sans';
+}
+#links h2 {margin-bottom: .5em;}
+#links ul {
+	list-style-type: none;
+	text-align: center;
+}
+#links ul li {padding: 2px 0;}
+#links ul li a {
+	text-decoration: none;
+	color: #2c3e50;
+}
+
+
 
 #content {
 	width: 70%;
 	height: 100%;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	z-index: -20;
 }
 
 .slide-header {
@@ -133,8 +163,8 @@ aside {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 	border: 1px solid #2c3e50;
-	transition: background .24s ease-in-out;
 	color: #2c3e50;
 }
 /*.slide-header:hover {
@@ -144,7 +174,11 @@ aside {
 
 #slide_1 {
 	background-color: ;
-	color: #2c3e50;;
+	color: #2c3e50;
+}
+#slide1_container {
+	width: 500px;
+	transform: translateY(-50px);
 }
 .columns {
 	display: block;
@@ -170,6 +204,8 @@ aside {
 #slide_2 {
 	box-sizing: content-box;
 	padding: 0;
+	height: auto;
+	min-height: 85%;
 }
 .flex {
 	display: flex;
@@ -200,11 +236,13 @@ aside {
 	position: relative;
 	display: flex;
 	flex: 1;
-	min-height: 150px;
-	min-width: 30%;
+	flex-wrap: wrap;
+	min-height: 250px;
+	min-width: 294px;
 	list-style-type: none;
 	box-sizing: border-box;
 	border: 1px solid #34495e;
+	overflow: hidden;
 }
 .skill:first-child {
 	border-right: none;
@@ -231,6 +269,7 @@ aside {
 	align-items: center;
 	color: #fafafa;
 }
+.skill .front img {height: 50%;}
 .skill .back {
 	position: absolute;
 	transform: perspective(600px) rotateY(180deg);
@@ -297,7 +336,7 @@ aside {
 	background-image: url('https://lh4.googleusercontent.com/-4g95Bo-AgTM/AAAAAAAAAAI/AAAAAAAAAAA/ZDl5Ogv0ulA/s0-c-k-no-ns/photo.jpg');
 }
 #work_list1 li:nth-child(2):before {
-	background-image: url('https://pbs.twimg.com/profile_images/378800000704043508/cad54e71a86afa9dddaebe039d1b3c55_400x400.png');
+	background-image: url('https://pbs.twimg.com/profile_images/690254512880156672/V6ZCed-V.jpg');
 }
 #work_list1 li:nth-child(3):before {
 	background-image: url('http://sfappeal.com/wp-content/uploads/2011/06/target-logo.png');
@@ -314,13 +353,13 @@ aside {
 	background-image: url('https://pbs.twimg.com/profile_images/542067686167957504/sTd6FOwC.png');
 }
 #work_list2 li:nth-child(2):before {
-	background-image: url('https://fbcdn-photos-h-a.akamaihd.net/hphotos-ak-prn2/v/t1.0-0/p160x160/563617_556060377767450_1956485971_n.png?oh=15f3000b22cea783b0a75b84f87821ed&oe=56BFE678&__gda__=1455523971_37530ae51653cb4a34ff0bf1a338ecd2');
+	background-image: url('https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/563617_556060377767450_1956485971_n.png?oh=161d2b6b077f6999a1eac8e3f82ee97b&oe=57E6A0BA');
 }
 #work_list2 li:nth-child(3):before {
 	background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/TheHomeDepot.svg/150px-TheHomeDepot.svg.png');
 }
 #work_list2 li:nth-child(4):before {
-	background-image: url('https://www.pearson.com/content/dam/corporate/global/pearson-dot-com/Pearson_logo.png');
+	background-image: url('https://pbs.twimg.com/profile_images/683949357155151872/uJNBKX9l.jpg');
 }
 #work_list2 li:nth-child(5):before {
 	background-image: url('http://static.wixstatic.com/media/61951c_d60a22797c3a46e0b5d09c4fd717945e.jpg_srz_181_257_85_22_0.50_1.20_0.00_jpg_srz');

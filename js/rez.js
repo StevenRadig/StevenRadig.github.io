@@ -1,14 +1,14 @@
-console.log("script is linked and runnin' cap'n!");
+console.log("snnin' cap'n!");
 
 var skills = [
-  ["html", 80],
-  ["css", 90],
-  ["js", 57],
-  ["php", 41],
-  ["ruby", 14],
-  ["java", 26],
+  ["html", 88],
+  ["css", 93],
+  ["js", 81],
+  ["php", 71],
+  ["gulp", 14],
+  ["wordpress", 76]
 ]
-
+;
 /*function toRad(degrees) {
   var factor = (Math.PI / 180);
   var north = (Math.PI / 2);

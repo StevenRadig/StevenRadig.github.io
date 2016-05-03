@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax / jQuery || 10 Day Forecast</title>
+	<link rel="stylesheet" href="css/weather.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</head>
+<body>
+	<h1 class="font">Cedar Rapids</h1>
+
+	<div class="wrapper">
+		<div class="shadow"></div>
+		<div class="days">
+			<script>
+				$(document).ready(function($) {
+				  $.ajax({
+					  url : "http://api.wunderground.com/api/ea1975a6f506f9a9/forecast10day/q/IA/Cedar_Rapids.json",
+					  dataType : "jsonp",
+					  success : function(url) {
+					  	$myForecast = [];
+					  	for(i=0; i<url.forecast.simpleforecast.forecastday.length; i++) {
+					  		$myForecast[i] = [];
+					  		$myForecast[i].push(url.forecast.simpleforecast.forecastday[i].date.weekday);
+					  		$myForecast[i].push(url.forecast.simpleforecast.forecastday[i].icon_url);
+					  		$myForecast[i].push(url.forecast.simpleforecast.forecastday[i].high.fahrenheit);
+					  		$myForecast[i].push(url.forecast.simpleforecast.forecastday[i].low.fahrenheit);
+					  		
+					  	}
+					  	
+					  	for(x=0; x<$myForecast.length; x++) {
+					  		var z = document.createElement('div');
+					  			z.className = 'day';
+					  		
+					  		$(z).append('<h2 class="font">'+$myForecast[x][0]+'</h2>');
+					  		$(z).append('<img src='+$myForecast[x][1]+'>');
+					  		$(z).append('<p class="font">High: '+$myForecast[x][2]+'&deg;</p>');
+					  		$(z).append('<p class="font">Low: '+$myForecast[x][3]+'&deg;</p>');
+					  		$('.days').append(z);
+					  	}
+					  	
+					  }
+					});
+				  	
+				});
+			</script>
+		</div>
+		<nav>
+			<span id="left">&lt;</span>
+			<span id="right">&gt;</span>
+		</nav>
+		<script>
+			$(function() {
+				var transX = 0;
+
+				$('#left').click(function() {
+					if(transX <= 190 && transX > -865){transX -= 190;}
+					$('.days').css("transform", "translateX("+transX+"px)");
+				});
+
+				$('#right').click(function() {
+					if(transX < 300){transX += 190;}
+					$('.days').css("transform", "translateX("+transX+"px)");
+				});
+			});
+		</script>
+	</div>
+
+	
+</body>
+</html>

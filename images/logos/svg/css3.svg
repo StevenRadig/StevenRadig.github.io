@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3823"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   width="214"
+   height="300"
+   sodipodi:docname="css3.svg">
+  <metadata
+     id="metadata3829">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3827">
+    <filter
+       id="filter3833"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix3835"
+         type="saturate"
+         values="0" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="850"
+     id="namedview3825"
+     showgrid="false"
+     inkscape:zoom="1.1458728"
+     inkscape:cx="-260.23911"
+     inkscape:cy="169.82269"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3823"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       orientation="-0.99659219,-0.082486398"
+       position="-321.15257,338.60651"
+       id="guide3839" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-407.89656,136.68546"
+       id="guide3859" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-375.19079,117.24712"
+       id="guide3861" />
+    <sodipodi:guide
+       orientation="-0.99620421,0.0870469"
+       position="-222.53779,186.7572"
+       id="guide3863" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-362.2319,168.77415"
+       id="guide3865" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="-365.93444,242.51641"
+       id="guide3867" />
+  </sodipodi:namedview>
+  <path
+     style="fill:#ffffff"
+     d="M 105.92272,288.10433 26.79333,265.03666 9.26389,67.770671 l 195.47222,0 -18.98162,198.731759 z m 52.53268,-57.1507 10.95295,-125.26929 -124.90754,0 2.15587,24.71133 95.93333,0.52976 -2.09449,23.97024 -62.95082,0 2.18076,24.53093 c 0,0 36.65239,0 58.49822,0 l -2.37826,32.08869 -29.9227,6.31536 -26.39008,-6.32097 -1.47307,-19.61401 -26.05508,0 3.40755,39.18689 c 16.38525,5.35843 33.17878,9.48228 50.51068,14.31311 z M 50.23021,30.395671 l 0,-18.5 15.05226,0 15.05226,0 -0.30226,5.25 -0.30226,5.25 -8.79135,0.289536 -8.79135,0.289536 0.29135,7.710464 0.29135,7.710464 8.75,0.288933 8.75,0.288933 0,4.961067 0,4.961067 -15,0 -15,0 z m 37,13.540442 0,-4.959557 7.93925,-0.290443 7.93925,-0.290442 -7.89575,-8.5 c -7.52412,-8.099936 -7.8978,-8.723565 -7.93925,-13.25 l -0.0435,-4.75 17,0 17,0 0,4.959558 0,4.959557 -8.11794,0.290443 -8.11793,0.290442 8.0756,8.5 c 7.74007,8.146829 8.07737,8.69736 8.11794,13.25 l 0.0423,4.75 -17,0 -17,0 0,-4.959558 z m 40.66667,4.292891 c -0.36667,-0.366666 -0.66667,-2.599147 -0.66667,-4.961067 l 0,-4.2944 8.44981,-0.288933 8.4498,-0.288933 -8.4498,-9.268623 c -7.63286,-8.372509 -8.44981,-9.653553 -8.44981,-13.25 l 0,-3.981377 17.5,0 17.5,0 0,4.959558 0,4.959557 -8.03478,0.290443 -8.03478,0.290442 8.03478,8.661992 c 7.62023,8.215078 8.03478,8.89871 8.03478,13.25 l 0,4.588008 -16.83333,0 c -9.25834,0 -17.13334,-0.3 -17.5,-0.666667 z"
+     id="path3837"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccsscccccccssccccccscccsscccccccsscsc"
+     inkscape:export-filename="G:\just finish it\images\css.png"
+     inkscape:export-xdpi="89.989998"
+     inkscape:export-ydpi="89.989998" />
+</svg>

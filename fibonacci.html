@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fibnocci Script</title>
+	<link rel="stylesheet" type="text/css" href="css/fibo.css">
+	<link rel="stylesheet" type="text/css" href="css/styles/tomorrow-night.css">
+</head>
+<body>
+	<main>
+		<h1>Fibonacci Sequence</h1>
+		<p>So, if you're unfamiliar with the fibonacci sequence, you can read about <a href="">right here</a>.</p><br/>
+		<p>This is something I made last Thursday in my scripting class. The professor was going over the final. I thought that was really boring and would have preferred to just take the final right then and there, so I decided to challenge myself.</p>
+		<h2>Script</h2>
+		<pre>
+<code class="javascript">
+    //counter variable
+    var i = 0;
+    //array for the results
+    var nums = [];
+
+    //while loop to find the first dozen numbers
+    while(nums.length < 12) {
+
+      //if the array is empty
+      //add the numbers 0 and 1
+      //as the first two indices
+      if(i==0){
+        nums.push(0);
+        nums.push(1);
+      }
+
+      //variable for the last index
+      var lastIndex = nums.length -1;
+
+      //this what computes the number in the sequence
+      //it is the product of adding the last two
+      //numbers in the array
+      i = nums[lastIndex-1] + nums[lastIndex];
+	
+      //adds the result to the results array 'num'
+        nums.push(i);
+    }
+
+    //once the first loop is done
+    //this prints out all the results
+    //with a standard 'for loop'
+    for(x=0; x < nums.length; x++) { 
+      console.log(nums[x]);
+    }
+
+</code>
+		</pre>
+		<h2>Output</h2>
+		<pre>
+<code class="javascript"> 
+    0
+    1
+    1
+    2
+    3
+    5
+    8
+    13
+    21
+    34
+    55
+    89
+
+</code>
+		</pre>
+	</main>
+
+	<script src="js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

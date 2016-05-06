@@ -1,5 +1,3 @@
-console.log("snnin' cap'n!");
-
 var skills = [
   ["html", 88],
   ["css", 93],

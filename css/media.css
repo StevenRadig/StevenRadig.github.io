@@ -188,7 +188,21 @@
 
 @media screen and (max-width: 416px){
 	aside {
-		min-width: 370px;
+		min-width: 320px;
+		min-height: 480px;
 	}
-	#slide_2 {height: 210%;}
+	#content {
+		transform: translateY(480px);
+	}
+
+	.slide {min-height: 480px;}
+	#slide_2 {min-height: 210%;}
+}
+@media screen and (max-width: 375px) {#slide_2 {min-height: 1600px;}}
+@media screen and (max-width: 360px){
+	#slide_1 {min-height: 900px;}
+	#work_x h1 {
+		text-align: center;
+		height: 100px;
+	}
 }

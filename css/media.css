@@ -177,6 +177,7 @@
 }
 
 @media screen and (max-width: 430px) {
+	aside {min-height: 380px;}
 	#slide_1 {height: 115%;}
 	.slide-header {padding: 1em .5em;}
 	#more h1 {font-size: 2rem;}

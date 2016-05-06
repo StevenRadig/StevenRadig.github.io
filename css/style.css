@@ -18,15 +18,12 @@ body {
 
 
 .slide {
-	position: relative;
 	width: 100%;
 	height: 85%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	box-sizing: border-box;
-	padding: 50px;
 	border-bottom: 1px solid #ccc;
 	overflow: hidden;
 }
@@ -57,16 +54,18 @@ aside {
 #contact {
 	width: 100%;
 	height: 200px;
-	margin-right: -102px;
-	position: relative;
+	position: absolute;
+	right: 0;
 	z-index: -10;
 	box-sizing: border-box;
-	padding: 40px 15px;
+	padding-right: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 	justify-content: center;
 	border: 1px solid #2c3e50;
+	border-left: 0;
+	border-right: 0;
 	line-height: 1.25em;
 }
 #contact h1 { 
@@ -111,11 +110,11 @@ aside {
 	display: block;
 	content: '';
 	height: 200px;
-	width: 600px;
+	width: 800px;
 	position: relative;
 	z-index: -3;
-	right: 500px;
-	transform: rotate(-55deg);
+	right: 700px;
+	transform: rotate(-50deg);
 	transform-origin: center right;
 	box-sizing: border-box;
 	border: 1px solid #2c3e50;
@@ -151,9 +150,6 @@ aside {
 #content {
 	width: 70%;
 	height: 100%;
-	justify-content: center;
-	align-items: center;
-	position: relative;
 }
 
 .slide-header {
@@ -171,6 +167,8 @@ aside {
 #slide_1 {
 	background-color: ;
 	color: #2c3e50;
+	box-sizing: border-box;
+	padding: 50px;
 }
 #slide1_container {
 	width: 500px;
@@ -205,7 +203,6 @@ aside {
 	display: flex;
 	flex: 1;
 	flex-wrap: wrap;
-	min-width: 675px;
 	width: 100%;
 	height: 300px;
 	background-color: #34495e;
@@ -272,7 +269,8 @@ aside {
 .skill:hover .back {
 	transform: perspective(600px) rotateY(0deg);
 }
-#work_x {padding: 0;}
+#work_x {height: auto;}
+
 #work_x h1 {
 	width: 100%;
 	height: 5rem;
@@ -344,9 +342,9 @@ aside {
 }
 
 .no-bottom-border {border-bottom: 0 !important;}
-#ed {
-	padding: 0;
-}
+
+
+
 #ed h1 {
 	width: 100%;
 	height: 5rem;
@@ -409,10 +407,8 @@ aside {
 	background: #fafafa;
 }
 
-#more {
-	padding: 0;
 
-}
+
 #more h1 {
 	width: 100%;
 	height: 5rem;
@@ -444,8 +440,9 @@ aside {
 #interests {
 	display: flex;
 	flex-direction: column;
+	border-left: 1px solid #2c3e50;
 }
-
+#interests h2 {border-left: none;}
 #more details {
 	display: flex;
 	align-items: center;
@@ -474,7 +471,6 @@ aside {
 	color: #555;
 }
 #awards {
-	border-left: 1px solid #2c3e50;
 }
 #awards h3 {
 	width: 100%;

@@ -385,19 +385,19 @@ aside {
 
 .school:nth-child(1) {
 	/*background-image: url('http://www.showchoir.com/choirs/media/school_images/s68.jpg');*/
-	background-image: url('images/bandana_square.png');
+	background-image: url('../images/bandana_square.png');
 	justify-content: flex-start;
 	background-position: 0 -100px;
 }
 
 .school:nth-child(2) {
 	/*background-image: url('http://www.wellingtonmgt.com/sites/default/files/property_images/Bandana%20Sq_1st%20Light%231_PRINT_0.jpg');*/
-	background-image: url('images/linn-mar.jpg');
+	background-image: url('../images/linn-mar.jpg');
 	justify-content: flex-end;
 }
 .school:nth-child(3) {
 	/*background-image: url('http://www.opnarchitects.com/wp-content/uploads/2012/12/Kirkwood-Cedar-Hall-2-of-7.jpg');*/
-	background-image: url('images/kirkwood.jpg');
+	background-image: url('../images/kirkwood.jpg');
 	justify-content: flex-start;
 	box-sizing: border-box;
 	padding-left: 20%;
